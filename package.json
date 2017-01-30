@@ -1,0 +1,16 @@
+{
+  "name": "react-native-tvos-controller",
+  "version": "0.0.1",
+  "description": "TvOS remote controller module for react native.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "tvos"
+  ],
+  "author": "ChenYang",
+  "license": "MIT"
+}
