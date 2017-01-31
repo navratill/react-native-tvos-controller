@@ -78,6 +78,7 @@ var tapSubscription = reactNativeTvosController.subscribe('TAP',
       e.code : 0 || 1 || 2 || 3 || 4 || 5 || 6
       */
     });
+    tapSubscription(); //Cancel Subscription 
 ```
 
 #####SWIPE#####
@@ -92,6 +93,7 @@ var swipeSubscription = reactNativeTvosController.subscribe('SWIPE',
       e.code : 0 || 1 || 2 || 3 
       */
     });
+    swipeSubscription(); //Cancel Subscription 
 ```
 
 #####LONGPRESS#####
@@ -106,6 +108,7 @@ var longPressSubscription = reactNativeTvosController.subscribe('LONGPRESS',
       e.code : 0 || 1
       */
     });
+    longPressSubscription(); //Cancel Subscription
 ```
 
 #####PAN#####
@@ -121,6 +124,7 @@ var panSubscription = reactNativeTvosController.subscribe('PAN',
       e.y : (y offset)
       */
     });
+    panSubscription(); //Cancel Subscription
 ```
 
 
