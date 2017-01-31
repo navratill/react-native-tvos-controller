@@ -1,7 +1,12 @@
 # react-native-tvos-controller
+
+[![npm version](https://badge.fury.io/js/react-native-tvos-controller.svg)](https://badge.fury.io/js/react-native-tvos-controller)
+
 TvOS remote controller module for react native.
 Including "tap","long press","swipe" and "pan" gesture.
+
 [React Native for TVOS](https://medium.com/@7ynk3r/react-native-apple-tv-today-48beb398a1ab#.5pp5drlyy)
+
 [react-native-tvos-controller demo video](https://youtu.be/pou8ffWY8EY)
 
 ## Install
@@ -29,7 +34,7 @@ rnpm link react-native-tvos-controller
 ##Usage
 
 ```javascript
-import reactNativeTvosController from "react-native-tvos-controller;
+import reactNativeTvosController from "react-native-tvos-controller"
 ```
 
 ###connect###
