@@ -9,8 +9,13 @@
   "keywords": [
     "react",
     "react-native",
-    "tvos"
+    "tvos",
+    "remote controller"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ycinfinity/react-native-tvos-controller.git"
+  },
   "author": "ChenYang",
   "license": "MIT"
 }
