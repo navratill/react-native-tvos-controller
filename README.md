@@ -31,6 +31,16 @@ You need [`rnpm`](https://github.com/rnpm/rnpm) (`npm install -g rnpm`)
 rnpm link react-native-tvos-controller
 ```
 
+## Manually link
+If *Automatically link* can't work, you should link the module manually.
+[Manually Link Tutorial](https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking)
+
+1. Add the following to your Project: node_modules/react-native-tvos-controller/ReactNativeTvosController/ReactNativeTvosController.xcodeproj
+
+2. Add the following to Link Binary With Libraries: libReactNativeTvosController.a
+
+3. Add the following to your Header Search Paths: $(SRCROOT)/../node_modules/react-native-tvos-controller/ReactNativeTvosController/ReactNativeTvosController
+
 ##Usage
 
 ```javascript
