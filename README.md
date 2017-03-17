@@ -41,20 +41,20 @@ If *Automatically link* can't work, you should link the module manually.
 
 3. Add the following to your Header Search Paths: $(SRCROOT)/../node_modules/react-native-tvos-controller/ReactNativeTvosController/ReactNativeTvosController
 
-##Usage
+## Usage
 
 ```javascript
 import reactNativeTvosController from "react-native-tvos-controller"
 ```
 
-###connect###
+### connect
 
 ```javascript
 reactNativeTvosController.connect()
 ```
 Connect the remote controller of apple TV.
 
-###enablePanGesture###
+### enablePanGesture
 
 ```javascript
 reactNativeTvosController.enablePanGesture();
@@ -62,7 +62,7 @@ reactNativeTvosController.enablePanGesture();
 You will receive the specific moving offset tracing data if you enable the pan gesture.
 You can't receive the swipe event anymore.
 
-###disablePanGesture###
+### disablePanGesture
 
 ```javascript
 reactNativeTvosController.disablePanGesture();
@@ -70,13 +70,13 @@ reactNativeTvosController.disablePanGesture();
 You won't receive the specific moving offset tracing data if you disable the pan gesture.
 You can continue receiving the swipe event.
 
-###subscribe###
+### subscribe
 
-Subscribe the native events of Apple's remote controller.
+Subscribe the native events of Apple TV's remote controller.
 
-####events####
+#### events
 
-#####TAP#####
+##### TAP
 
 ```javascript
 var tapSubscription = reactNativeTvosController.subscribe('TAP',
@@ -91,7 +91,7 @@ var tapSubscription = reactNativeTvosController.subscribe('TAP',
     tapSubscription(); //Cancel Subscription 
 ```
 
-#####SWIPE#####
+##### SWIPE
 
 ```javascript
 var swipeSubscription = reactNativeTvosController.subscribe('SWIPE',
@@ -106,7 +106,7 @@ var swipeSubscription = reactNativeTvosController.subscribe('SWIPE',
     swipeSubscription(); //Cancel Subscription 
 ```
 
-#####LONGPRESS#####
+##### LONGPRESS
 
 ```javascript
 var longPressSubscription = reactNativeTvosController.subscribe('LONGPRESS',
@@ -121,7 +121,7 @@ var longPressSubscription = reactNativeTvosController.subscribe('LONGPRESS',
     longPressSubscription(); //Cancel Subscription
 ```
 
-#####PAN#####
+##### PAN
 
 ```javascript
 var panSubscription = reactNativeTvosController.subscribe('PAN',
