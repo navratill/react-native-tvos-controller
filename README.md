@@ -1,6 +1,7 @@
 # react-native-tvos-controller
 
 [![npm version](https://badge.fury.io/js/react-native-tvos-controller.svg)](https://badge.fury.io/js/react-native-tvos-controller)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/jondot/awesome-react-native)
 
 TvOS remote controller module for react native.
 Including "tap","long press","swipe" and "pan" gesture.
