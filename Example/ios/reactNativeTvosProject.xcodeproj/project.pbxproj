@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310569261EE8348A00071FAC /* ReactNativeTvosController.m in Sources */ = {isa = PBXBuildFile; fileRef = 310569251EE8348A00071FAC /* ReactNativeTvosController.m */; };
 		68B7B9C81E2B6D710011519F /* libRCTAnimation-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */; };
 		68B7B9C91E2B6D710011519F /* libRCTImage-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B7B9AD1E2B6D540011519F /* libRCTImage-tvOS.a */; };
 		68B7B9CA1E2B6D710011519F /* libRCTLinking-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B7B9B11E2B6D540011519F /* libRCTLinking-tvOS.a */; };
@@ -165,6 +166,8 @@
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		310569241EE8348A00071FAC /* ReactNativeTvosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactNativeTvosController.h; path = ../../../ReactNativeTvosController/ReactNativeTvosController/ReactNativeTvosController.h; sourceTree = "<group>"; };
+		310569251EE8348A00071FAC /* ReactNativeTvosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReactNativeTvosController.m; path = ../../../ReactNativeTvosController/ReactNativeTvosController/ReactNativeTvosController.m; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		68B7B9981E2B6D540011519F /* RNTVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNTVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B7B9A31E2B6D540011519F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -278,6 +281,8 @@
 			children = (
 				68B7B9D01E2B6DF30011519F /* AppDelegate.h */,
 				68B7B9D11E2B6DF30011519F /* AppDelegate.m */,
+				310569241EE8348A00071FAC /* ReactNativeTvosController.h */,
+				310569251EE8348A00071FAC /* ReactNativeTvosController.m */,
 				68B7B9D21E2B6DF30011519F /* Images.xcassets */,
 				68B7B9D31E2B6DF30011519F /* main.m */,
 				68B7B9A31E2B6D540011519F /* Info.plist */,
@@ -592,6 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				310569261EE8348A00071FAC /* ReactNativeTvosController.m in Sources */,
 				68B7B9D61E2B6DF30011519F /* main.m in Sources */,
 				68B7B9D41E2B6DF30011519F /* AppDelegate.m in Sources */,
 			);

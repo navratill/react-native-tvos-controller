@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "ReactNativeTvosController.h"
 
+
+@interface ReactNativeTvosController()
+
+- (NSString *)recognizerStateToString:(UIGestureRecognizerState)state;
+
+@end
+
 @implementation ReactNativeTvosController
 
 UIPanGestureRecognizer *panGestureRecognizer;
@@ -162,17 +169,31 @@ RCT_EXPORT_METHOD(disablePanGesture) {
 
 - (void)respondToPanGesture:(UIPanGestureRecognizer *)gesture {
     UIView *rootView = [self getRootViewController].view;
+    NSString *gestureState = [self recognizerStateToString:gesture.state];
     CGPoint translation = [gesture translationInView:rootView];
-    switch (gesture.state) {
-        case UIGestureRecognizerStateChanged:
-            [self sendEventWithName:@"PAN" body:@{@"state": @"Changed",
-                                                  @"x": [NSNumber numberWithInt:translation.x],
-                                                  @"y": [NSNumber numberWithInt:translation.y]
-                                                  }];
-            break;
-        default:
-            break;
+    CGPoint velocity = [gesture velocityInView:rootView];
+  
+    if (gestureState) {
+      [self sendEventWithName:@"PAN" body:@{@"state": gestureState,
+                                          @"x": [NSNumber numberWithInt:translation.x],
+                                          @"y": [NSNumber numberWithInt:translation.y],
+                                          @"velocityX": [NSNumber numberWithFloat:velocity.x],
+                                          @"velocityY": [NSNumber numberWithFloat:velocity.y],
+                                          }];
     }
+}
+
+- (NSString *)recognizerStateToString:(UIGestureRecognizerState)state {
+  switch (state) {
+    case UIGestureRecognizerStateBegan:
+      return @"Began";
+    case UIGestureRecognizerStateChanged:
+      return @"Changed";
+    case UIGestureRecognizerStateEnded:
+      return @"Ended";
+    default:
+      return nil;
+  }
 }
 
 @end

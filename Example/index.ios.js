@@ -16,7 +16,7 @@ import reactNativeTvosController from "react-native-tvos-controller";
 
 reactNativeTvosController.connect();
 reactNativeTvosController.enablePanGesture();
-reactNativeTvosController.disablePanGesture();
+// reactNativeTvosController.disablePanGesture(); // uncomment to disable Pan Gesture
 var tapSubscription = reactNativeTvosController.subscribe('TAP',
     (e) => {
       console.log("tapped");
