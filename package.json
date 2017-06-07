@@ -1,6 +1,6 @@
 {
   "name": "react-native-tvos-controller",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "TvOS remote controller module for react native.",
   "main": "index.js",
   "scripts": {
